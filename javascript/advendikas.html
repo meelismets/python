@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="et">
+    <head>
+        <meta charset="UTF-8">
+        <title>Advendikas</title>
+        <style>
+            .raam {
+                background-image: url('kalender.jpg');
+                background-repeat: no-repeat;
+                background-size: 1200px 1200px;
+                padding-top: 35px;
+                padding-left: 47px;
+            }
+            .avatud {
+                background-color: lightgreen;
+                opacity: 100%;
+            }
+            table {
+                border-spacing: 25px;
+            }
+            td {
+                height:191px;
+                width:187px;
+                text-align: center;
+                vertical-align: center;
+                border: 1px solid green;
+                opacity: 0;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Advendikas</h1>
+
+        <div class="raam">
+            <table id="kalender"></table>
+        </div>
+
+        <script src="advendikas.js" ></script>
+    </body>
+
+</html>

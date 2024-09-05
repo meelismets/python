@@ -1,0 +1,76 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Bootstrap, kuidas kasutada</title>
+        <!-- Siin kasutame bootstrapi CSS ehk stiile-->
+        <!-- Kopeeri järgnev rida oma HTML faili <head> bloki sisse -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    </head>
+    <body>
+
+        <h1>
+            Kuidas luua lehe struktuuri
+            <span class="badge bg-secondary">Huvitav!</span>
+        </h1>
+
+        <div class="border shadow p-3 mb-5 bg-body rounded">
+            Järgnevalt jagame lehe kolmeks tulbaks, järgides juhiseid
+            <a class="btn btn-outline-info" target="_blank" href="https://getbootstrap.com/docs/5.2/layout/grid/" >siit</a>
+        </div>
+
+        <!-- Kirjeldame ära div bloki kui konteineri -->
+        <div class="container text-center border">
+            <!-- Kirjeldame ära div bloki kui rea, nagu tabelis -->
+            <div class="row border">
+                <!-- Kirjeldame ära div bloki kui tulba, nagu tabelis, aga kolm korda, et saasks kolm tulpa -->
+                <div class="col-12 border">
+                  Pealkiri
+                </div>
+            </div>
+            <div class="row border">
+                <!-- Kirjeldame ära div bloki kui tulba, nagu tabelis, aga kolm korda, et saasks kolm tulpa -->
+                <div class="col-2 border">
+                  Menüü
+                    <ul class="nav flex-column">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Pildigalerii</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Veebivorm</a>
+                      </li>
+                    </ul>
+                </div>
+                <div class="col-10 border">
+
+                    <!--karusell-->
+                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://kool.metz.ee/pilt/itworker.jpg" class="d-block w-50" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://kool.metz.ee/pilt/fullstack.jpg" class="d-block w-50" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://kool.metz.ee/pilt/experience.jpg" class="d-block w-50" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- <body> bloki lõppu enne </body> täägi kopeeri need read. Need on abistavad JavaScripti teegid. -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+    </body>
+</html>

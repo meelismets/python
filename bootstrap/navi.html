@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Muinasjutt</title>
+        <p>Elas kord ...</p>
+        <style>
+            .punane-nupp {}
+        </style>
+        <!-- Siin kasutame bootstrapi CSS ehk stiile-->
+        <!-- Kopeeri järgnev rida oma HTML faili <head> bloki sisse -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    </head>
+
+    <body>
+        <!-- Navigatsiooni bloki algus -->
+        <nav>
+            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+
+                <!-- Saki bloki algus: kodu -->
+                <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">
+                    Avaleht
+                </button>
+                <!-- Saki bloki lõpp: kodu -->
+                <!-- Saki bloki algus: klasside nimekiri -->
+                <button class="nav-link" id="nav-list-tab" data-bs-toggle="tab" data-bs-target="#nav-list" type="button" role="tab" aria-controls="nav-list" aria-selected="false">
+                    Klasside nimekiri
+                </button>
+                <!-- Saki bloki lõpp: tunniplaan -->
+                <!-- Saki bloki algus: tunniplaan -->
+                <button class="nav-link" id="nav-timetable-tab" data-bs-toggle="tab" data-bs-target="#nav-timetable" type="button" role="tab" aria-controls="nav-timetable" aria-selected="false">
+                    Tunniplaan
+                </button>
+                <!-- Saki bloki lõpp: tunniplaan -->
+                <!-- Saki bloki algus: kontakt -->
+                <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">
+                    Kontakt
+                </button>
+                <!-- Saki bloki lõpp: kontakt -->
+            </div>
+        </nav>
+        <!-- Navigatsiooni bloki lõpp -->
+
+        <!-- Sisu bloki algus -->
+        <div class="tab-content" id="nav-tabContent">
+            <!-- Sisu bloki algus: kodu -->
+            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+
+                Siia esielehe sisu
+
+                Lisada logo kooli kodulehelt (leia lehelt kiili.edu.ee sümboolika alt logo, leia pildi aadress ehk url ja kasuta seda <img> täägiga)
+
+            </div>
+            <!-- Saki bloki lõpp: kodu -->
+            <!-- Sisu bloki algus: klasside nimekiri -->
+            <div class="tab-pane fade" id="nav-list" role="tabpanel" aria-labelledby="nav-timetable-list" tabindex="0">
+
+                Siia Klasside nimekiri
+
+                Lahendada listinguga nimekirjaga
+
+                https://getbootstrap.com/docs/5.2/components/list-group/
+
+            </div>
+            <!-- Saki bloki lõpp: klasside nimekiri -->
+            <!-- Sisu bloki algus: tunniplaan -->
+            <div class="tab-pane fade" id="nav-timetable" role="tabpanel" aria-labelledby="nav-timetable-tab" tabindex="0">
+
+                Siia Tunniplaan
+
+                Lahendada grid systemi ehk raamistikuga, piisab tabelist enda nädala tunniplaani kohta
+
+                https://getbootstrap.com/docs/5.2/layout/grid/
+
+                tabeli alla lisada link (viide) kooli kodulehel olevale tunniplaanile. Kasutades täägi<a></a>
+                abiks https://www.w3schools.com/tags/tag_a.asp
+
+            </div>
+            <!-- Saki bloki lõpp: tunniplaan -->
+            <!-- Sisu bloki algus: kontakt -->
+            <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
+
+                Siia kontaktvorm
+
+                Kontakteerumise vorm, kus on lahter e-posti aadressile ja kirja sisule
+
+                Näide: https://getbootstrap.com/docs/5.2/forms/form-control/#example
+
+            </div>
+            <!-- Saki bloki lõpp: kontakt -->
+        </div>
+        <!-- Sisu bloki lõpp -->
+
+        <!-- <body> bloki lõppu enne </body> täägi kopeeri need read. Need on abistavad JavaScripti teegid. -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+    </body>
+</html>
